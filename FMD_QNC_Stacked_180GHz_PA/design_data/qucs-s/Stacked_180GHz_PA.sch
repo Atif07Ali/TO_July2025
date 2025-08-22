@@ -1,9 +1,9 @@
 <Qucs Schematic 25.1.2>
 <Properties>
-  <View=-3654,-6206,12439,2333,0.67275,2018,3364>
+  <View=-4210,-6146,14017,3126,0.121,158,151>
   <Grid=10,10,1>
-  <DataSet=Final_interstage_match_core_s2p.dat>
-  <DataDisplay=Final_interstage_match_core_s2p.dpl>
+  <DataSet=Final_interstage_spice_long_copy1.dat>
+  <DataDisplay=Final_interstage_spice_long_copy1.dpl>
   <OpenDisplay=0>
   <Script=differential3.m>
   <RunScript=0>
@@ -21,15 +21,19 @@
   <GND * 1 1300 170 0 0 1 2>
   <GND * 1 1140 370 0 0 1 2>
   <GND * 1 1300 -180 0 0 1 2>
+  <Lib rppd1 1 980 -260 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <GND * 1 1140 20 0 0 1 2>
   <GND * 1 1260 -1000 0 0 1 0>
   <GND * 1 1300 -470 0 0 1 2>
   <GND * 1 1140 -270 0 0 1 2>
+  <Lib rppd2 1 980 -550 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
+  <Lib rppd3 1 980 90 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V1 1 1260 -970 3 -20 1 3 "6.4 V" 1>
   <Vdc V2 1 1140 340 -58 -26 1 1 "2.6 V" 1>
   <Vdc V3 1 1140 -10 -58 -26 1 1 "4.2 V" 1>
   <Vdc V4 1 1140 -300 -58 -26 1 1 "5. 8V" 1>
   <GND * 1 1160 840 0 0 1 2>
+  <Lib rppd4 1 1000 560 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V5 1 1160 810 -58 -26 1 1 "1 V" 1>
   <Lib npn13G1 1 1260 -500 10 64 0 0 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
   <Lib npn13G2 1 1360 -500 30 64 1 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
@@ -47,15 +51,17 @@
   <GND * 1 2170 -850 0 0 1 2>
   <GND * 1 2010 -650 0 0 1 2>
   <GND * 1 2170 -1200 0 0 1 2>
+  <Lib rppd5 1 1850 -1280 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <GND * 1 2010 -1000 0 0 1 2>
-  <GND * 1 2130 -2020 0 0 1 0>
   <GND * 1 2170 -1490 0 0 1 2>
   <GND * 1 2010 -1290 0 0 1 2>
-  <Vdc V6 1 2130 -1990 3 -20 1 3 "6.4 V" 1>
+  <Lib rppd6 1 1850 -1570 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
+  <Lib rppd7 1 1850 -930 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V7 1 2010 -680 -58 -26 1 1 "2.6 V" 1>
   <Vdc V8 1 2010 -1030 -58 -26 1 1 "4.2 V" 1>
   <Vdc V9 1 2010 -1320 -58 -26 1 1 "5. 8V" 1>
   <GND * 1 2030 -180 0 0 1 2>
+  <Lib rppd8 1 1870 -460 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V10 1 2030 -210 -58 -26 1 1 "1 V" 1>
   <Lib npn13G9 1 2130 -1520 10 64 0 0 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
   <Lib npn13G10 1 2230 -1520 30 64 1 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
@@ -78,21 +84,30 @@
   <GND * 1 1400 -550 0 0 0 0>
   <Lib cap_rfcmim1 1 2250 -1610 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "10u" 1>
   <GND * 1 1970 -550 0 0 0 0>
-  <GND * 1 1110 470 0 0 0 0>
+  <GND * 1 1290 -330 0 0 0 1>
+  <GND * 1 1290 -40 0 0 0 1>
+  <GND * 1 2160 -1360 0 0 0 1>
+  <GND * 1 2160 -1060 0 0 0 1>
+  <GND * 1 1290 320 0 0 0 1>
+  <GND * 1 2160 -710 0 0 0 1>
+  <GND * 1 1290 690 0 0 0 1>
+  <GND * 1 2160 -330 0 0 0 1>
   <GND * 1 3010 -1570 0 0 1 2>
   <GND * 1 2970 -1220 0 0 0 0>
   <GND * 1 3010 -1870 0 0 1 2>
   <GND * 1 2850 -1670 0 0 1 2>
   <GND * 1 3010 -2220 0 0 1 2>
+  <Lib rppd9 1 2690 -2300 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <GND * 1 2850 -2020 0 0 1 2>
-  <GND * 1 2970 -3040 0 0 1 0>
   <GND * 1 3010 -2510 0 0 1 2>
   <GND * 1 2850 -2310 0 0 1 2>
-  <Vdc V11 1 2970 -3010 3 -20 1 3 "6.4 V" 1>
+  <Lib rppd10 1 2690 -2590 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
+  <Lib rppd11 1 2690 -1950 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V12 1 2850 -1700 -58 -26 1 1 "2.6 V" 1>
   <Vdc V13 1 2850 -2050 -58 -26 1 1 "4.2 V" 1>
   <Vdc V14 1 2850 -2340 -58 -26 1 1 "5. 8V" 1>
   <GND * 1 2870 -1200 0 0 1 2>
+  <Lib rppd12 1 2710 -1480 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "12u" 1 "1" 1>
   <Vdc V15 1 2870 -1230 -58 -26 1 1 "1 V" 1>
   <Lib npn13G17 1 2970 -2540 10 64 0 0 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
   <Lib npn13G18 1 3070 -2540 30 64 1 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_nonlinear_components" 0 "npn13G2" 0 "10" 1>
@@ -109,24 +124,14 @@
   <GND * 1 2730 -2220 0 0 0 0>
   <GND * 1 2730 -2510 0 0 0 0>
   <GND * 1 2810 -1570 0 0 0 0>
-  <GND * 1 1570 -520 0 0 0 0>
-  <GND * 1 3110 -2640 0 0 0 0>
-  <GND * 1 1760 -550 0 0 0 1>
-  <GND * 1 1730 -510 0 0 0 0>
-  <GND * 1 1600 -560 0 0 0 1>
+  <GND * 1 3000 -2380 0 0 0 1>
+  <GND * 1 3000 -2080 0 0 0 1>
+  <GND * 1 3000 -1730 0 0 0 1>
+  <GND * 1 3000 -1350 0 0 0 1>
+  <GND * 1 1650 -550 0 0 0 0>
   <Lib cap_rfcmim2 1 1380 -590 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "10u" 1>
-  <GND * 1 2440 -1540 0 0 0 0>
-  <GND * 1 2630 -1570 0 0 0 1>
-  <GND * 1 2600 -1530 0 0 0 0>
-  <GND * 1 2470 -1580 0 0 0 1>
+  <GND * 1 2520 -1570 0 0 0 0>
   <GND * 1 650 660 0 0 0 0>
-  <Lib cap_rfcmim24 1 2590 -1550 -109 -27 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "4u" 1>
-  <Lib cap_rfcmim20 1 1720 -530 -109 -27 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "4u" 1>
-  <Lib cap_rfcmim23 1 2430 -1560 -109 -27 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "6u" 1>
-  <Lib cap_rfcmim5 1 1090 430 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5u" 1>
-  <Lib cap_rfcmim22 1 1560 -540 -109 -27 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "6u" 1>
-  <Lib cap_rfcmim3 1 1950 -590 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5u" 1>
-  <Lib cap_rfcmim4 1 2790 -1610 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5u" 1>
   <Lib cap_rfcmim8 1 1000 130 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
   <Lib cap_rfcmim7 1 1000 -220 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
   <Lib cap_rfcmim9 1 1000 -510 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
@@ -136,64 +141,36 @@
   <Lib cap_rfcmim13 1 2710 -1910 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
   <Lib cap_rfcmim14 1 2710 -2260 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
   <Lib cap_rfcmim15 1 2710 -2550 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5.5u" 1>
-  <INCLSCR INCLSCR1 1 -370 -770 -60 16 0 0 ".LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerHBT.lib hbt_typ\n.LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerRES.lib res_typ\n.LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerCAP.lib cap_typ\n.control\npre_osdi C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\verilog-a\r3_cmc\r3_cmc.osdi\n.endc" 1 "" 0 "" 0>
   <GND * 1 3970 -1630 0 0 0 0>
-  <Pac P2 1 3970 -1680 18 -26 0 1 "2" 1 "50 Ohm" 1 "-100 dBm" 0 "0Hz" 0 "26.85" 0 "true" 0>
-  <Lib cap_rfcmim16 1 3090 -2690 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "10u" 1>
-  <Pac P1 1 650 610 18 -26 0 1 "1" 1 "50 Ohm" 1 "19.5 dBm" 1 "180GHz" 1 "26.85" 0 "true" 0>
-  <Lib rppd4 1 1000 560 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd3 1 980 90 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd1 1 980 -260 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd2 1 980 -550 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd8 1 1870 -460 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd7 1 1850 -930 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd5 1 1850 -1280 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd6 1 1850 -1570 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd11 1 2690 -1950 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd9 1 2690 -2300 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd10 1 2690 -2590 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <Lib rppd12 1 2710 -1480 72 144 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "rppd" 0 "3u" 1 "11.9u" 1 "1" 1>
-  <GND * 1 860 600 0 0 0 0>
-  <GND * 1 890 500 0 0 0 1>
-  <Lib cap_rfcmim6 1 850 520 -109 -27 0 2 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "5u" 1>
-  <GND * 1 980 470 0 0 0 0>
-  <GND * 1 1230 690 0 0 0 3>
-  <SPfile X33 1 980 440 -26 -53 0 0 "C:/Users/atif9/OneDrive/Desktop/s2p/45.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <SPfile X34 1 1260 690 21 -26 0 3 "C:/Users/atif9/OneDrive/Desktop/s2p/15.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 1290 320 0 0 0 1>
-  <SPfile X35 1 1260 320 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/35.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 1290 -40 0 0 0 1>
-  <GND * 1 1290 -330 0 0 0 1>
-  <SPfile X37 1 1260 -330 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/45.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <SPfile X36 1 1260 -40 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/42.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 1290 -770 0 0 0 1>
-  <SPfile X38 1 1260 -770 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/24.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2100 -330 0 0 0 3>
-  <SPfile X39 1 2130 -330 21 -26 0 3 "C:/Users/atif9/OneDrive/Desktop/s2p/15.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 1660 -550 0 0 0 0>
-  <SPfile X40 1 1660 -580 -26 -53 0 0 "C:/Users/atif9/OneDrive/Desktop/s2p/28.5.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2160 -710 0 0 0 1>
-  <SPfile X41 1 2130 -710 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/35.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2160 -1060 0 0 0 1>
-  <SPfile X42 1 2130 -1060 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/42.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2160 -1360 0 0 0 1>
-  <SPfile X43 1 2130 -1360 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/45.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2160 -1790 0 0 0 1>
-  <SPfile X44 1 2130 -1790 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/24.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2520 -1570 0 0 0 0>
-  <SPfile X45 1 2520 -1600 -26 -53 0 0 "C:/Users/atif9/OneDrive/Desktop/s2p/28.5.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 2940 -1350 0 0 0 3>
-  <SPfile X46 1 2970 -1350 21 -26 0 3 "C:/Users/atif9/OneDrive/Desktop/s2p/15.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 3000 -1730 0 0 0 1>
-  <SPfile X47 1 2970 -1730 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/35.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 3000 -2080 0 0 0 1>
-  <SPfile X48 1 2970 -2080 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/42.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 3000 -2380 0 0 0 1>
-  <SPfile X49 1 2970 -2380 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/45.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 3000 -2810 0 0 0 1>
-  <SPfile X50 1 2970 -2810 -282 -26 0 1 "C:/Users/atif9/OneDrive/Desktop/s2p/24.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
-  <GND * 1 3640 -2600 0 0 0 0>
-  <SPfile X51 1 3640 -2630 -26 -53 0 0 "C:/Users/atif9/OneDrive/Desktop/s2p/out.s2p" 1 "rectangular" 0 "linear" 0 "open" 0 "2" 0>
+  <Pac P1 1 650 610 18 -26 0 1 "1" 1 "50 Ohm" 1 "19.5 dBm" 0 "180 GHz" 0 "26.85" 0 "true" 0>
+  <Pac P2 1 3970 -1680 18 -26 0 1 "2" 1 "50 Ohm" 1 "-100 dBm" 0 "0 Hz" 0 "26.85" 0 "true" 0>
+  <Lib cap_rfcmim3 1 1950 -590 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "6u" 1>
+  <Lib cap_rfcmim4 1 2790 -1610 -16 -98 0 1 "C:/Users/atif9/QucsWorkspace/user_lib/IHP_PDK_basic_components" 0 "cap_rfcmim" 0 "3u" 1 "6u" 1>
+  <GND * 1 970 480 0 0 0 0>
+  <GND * 1 3580 -2600 0 0 0 0>
+  <GND * 1 1290 -770 0 0 1 3>
+  <INCLSCR INCLSCR1 1 -370 -770 -60 16 0 0 ".LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerHBT.lib hbt_typ\n.LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerRES.lib res_typ\n.LIB C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\ngspice\models\cornerCAP.lib cap_typ\n.control\npre_osdi C:\Users\atif9\IHP-Open-PDK\ihp-sg13g2\libs.tech\verilog-a\r3_cmc\r3_cmc.osdi\n.endc" 1 "" 0 "" 0>
+  <GND * 1 2060 -3060 0 0 1 0>
+  <Vdc V6 1 2060 -3030 3 -20 1 3 "6.4 V" 1>
+  <GND * 1 2170 -2490 0 0 0 0>
+  <SPICE X35 1 970 440 -26 -53 0 0 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/inpmatch_final.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X5 1 1260 690 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/15.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X3 1 1260 320 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/35.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X1 1 1260 -40 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/45.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X7 1 1260 -330 -384 -39 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/42.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X16 1 1260 -770 -384 -39 1 3 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/choke_first1.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X20 1 1650 -580 -26 -53 0 0 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/interstage.ckt" 0 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X6 1 2130 -330 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/15.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X4 1 2130 -710 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/35.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X8 1 2130 -1060 -384 -39 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/42.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X2 1 2130 -1360 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/45.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X37 1 2170 -2550 -26 -83 0 0 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/choke_last5.s3p.ckt" 1 "_netpo1,_netpo2,_netpo3" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X26 1 2520 -1600 -26 -53 0 0 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/interstage.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X11 1 2970 -1350 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/15.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X10 1 2970 -1730 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/35.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X12 1 2970 -2080 -384 -39 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/42.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X9 1 2970 -2380 -384 -26 0 1 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/45.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X36 1 3580 -2630 -26 -53 0 0 "C:/Users/atif9/TO_July2025/FMD_QNC_Stacked_180GHz_PA/design_data/openems/ckt_files/outputplane_8_8_12.ckt" 1 "_netpo1,_netpo2" 0 "yes" 0 "none" 0 "" 0>
 </Components>
 <Wires>
   <1300 440 1300 470 "" 0 0 0 "">
@@ -211,13 +188,11 @@
   <1140 -210 1230 -210 "" 0 0 0 "">
   <1260 -940 1260 -800 "" 0 0 0 "">
   <1140 -340 1140 -330 "" 0 0 0 "">
-  <1260 -580 1370 -580 "" 0 0 0 "">
   <1300 -500 1300 -470 "" 0 0 0 "">
   <1270 -500 1300 -500 "" 0 0 0 "">
   <1260 -450 1260 -400 "" 0 0 0 "">
   <1140 -500 1230 -500 "" 0 0 0 "">
   <1360 -560 1360 -550 "" 0 0 0 "">
-  <1260 -580 1260 -560 "" 0 0 0 "">
   <1260 -560 1260 -550 "" 0 0 0 "">
   <1260 -560 1360 -560 "" 0 0 0 "">
   <1300 -500 1350 -500 "" 0 0 0 "">
@@ -274,13 +249,11 @@
   <2140 -1230 2170 -1230 "" 0 0 0 "">
   <2010 -1070 2010 -1060 "" 0 0 0 "">
   <2010 -1230 2100 -1230 "" 0 0 0 "">
-  <2130 -1960 2130 -1820 "" 0 0 0 "">
   <2010 -1360 2010 -1350 "" 0 0 0 "">
   <2170 -1520 2170 -1490 "" 0 0 0 "">
   <2140 -1520 2170 -1520 "" 0 0 0 "">
   <2010 -1520 2100 -1520 "" 0 0 0 "">
   <2230 -1580 2230 -1570 "" 0 0 0 "">
-  <2130 -1600 2130 -1580 "" 0 0 0 "">
   <2130 -1580 2130 -1570 "" 0 0 0 "">
   <2130 -1580 2230 -1580 "" 0 0 0 "">
   <2170 -1520 2220 -1520 "" 0 0 0 "">
@@ -337,8 +310,7 @@
   <1890 -880 2010 -880 "" 0 0 0 "">
   <1890 -1230 2010 -1230 "" 0 0 0 "">
   <1840 -1230 1860 -1230 "" 0 0 0 "">
-  <2130 -1600 2240 -1600 "" 0 0 0 "">
-  <1400 -580 1570 -580 "" 0 0 0 "">
+  <1400 -580 1620 -580 "" 0 0 0 "">
   <1970 -580 2030 -580 "" 0 0 0 "">
   <1350 -270 1350 -260 "" 0 0 0 "">
   <1260 -270 1260 -260 "" 0 0 0 "">
@@ -363,7 +335,6 @@
   <1200 260 1440 260 "" 0 0 0 "">
   <1260 350 1260 370 "" 0 0 0 "">
   <1260 250 1260 290 "" 0 0 0 "">
-  <1010 440 1080 440 "" 0 0 0 "">
   <3010 -1600 3010 -1570 "" 0 0 0 "">
   <2980 -1600 3010 -1600 "" 0 0 0 "">
   <2970 -1320 2970 -1220 "" 0 0 0 "">
@@ -375,7 +346,6 @@
   <2980 -2250 3010 -2250 "" 0 0 0 "">
   <2850 -2090 2850 -2080 "" 0 0 0 "">
   <2850 -2250 2940 -2250 "" 0 0 0 "">
-  <2970 -2980 2970 -2840 "" 0 0 0 "">
   <2850 -2380 2850 -2370 "" 0 0 0 "">
   <3010 -2540 3010 -2510 "" 0 0 0 "">
   <2980 -2540 3010 -2540 "" 0 0 0 "">
@@ -449,27 +419,8 @@
   <2970 -1700 2970 -1670 "" 0 0 0 "">
   <2970 -1790 2970 -1760 "" 0 0 0 "">
   <1160 440 1160 600 "" 0 0 0 "">
-  <1260 -740 1260 -580 "" 0 0 0 "">
-  <2130 -1760 2130 -1600 "" 0 0 0 "">
-  <2970 -2680 2970 -2600 "" 0 0 0 "">
-  <2970 -2680 3080 -2680 "" 0 0 0 "">
-  <3110 -2680 3200 -2680 "" 0 0 0 "">
-  <3110 -2650 3110 -2640 "" 0 0 0 "">
-  <2970 -2780 2970 -2680 "" 0 0 0 "">
-  <1730 -580 1940 -580 "" 0 0 0 "">
-  <1730 -580 1730 -550 "" 0 0 0 "">
-  <1730 -520 1730 -510 "" 0 0 0 "">
-  <1570 -530 1570 -520 "" 0 0 0 "">
-  <1570 -580 1570 -560 "" 0 0 0 "">
-  <2550 -1600 2600 -1600 "" 0 0 0 "">
-  <2600 -1600 2600 -1570 "" 0 0 0 "">
-  <2600 -1540 2600 -1530 "" 0 0 0 "">
-  <2440 -1550 2440 -1540 "" 0 0 0 "">
-  <2270 -1600 2440 -1600 "" 0 0 0 "">
-  <2440 -1600 2490 -1600 "" 0 0 0 "">
-  <2440 -1600 2440 -1580 "" 0 0 0 "">
-  <2600 -1600 2780 -1600 "" 0 0 0 "">
-  <1110 440 1160 440 "" 0 0 0 "">
+  <1260 -740 1260 -670 "" 0 0 0 "">
+  <1680 -580 1940 -580 "" 0 0 0 "">
   <1020 140 1140 140 "" 0 0 0 "">
   <950 140 990 140 "" 0 0 0 "">
   <1020 -210 1140 -210 "" 0 0 0 "">
@@ -480,19 +431,34 @@
   <2680 -2250 2700 -2250 "" 0 0 0 "">
   <1020 -500 1140 -500 "" 0 0 0 "">
   <970 -500 990 -500 "" 0 0 0 "">
-  <3200 -2680 3200 -2630 "" 0 0 0 "">
+  <650 640 650 660 "" 0 0 0 "">
   <3970 -1650 3970 -1630 "" 0 0 0 "">
   <3970 -2630 3970 -1710 "vout" 4000 -2620 35 "">
-  <3670 -2630 3970 -2630 "" 0 0 0 "">
-  <3200 -2630 3610 -2630 "" 0 0 0 "">
-  <650 640 650 660 "" 0 0 0 "">
+  <2270 -1600 2490 -1600 "" 0 0 0 "">
+  <2550 -1600 2780 -1600 "" 0 0 0 "">
+  <3610 -2630 3970 -2630 "" 0 0 0 "">
+  <970 470 970 480 "" 0 0 0 "">
+  <1000 440 1160 440 "" 0 0 0 "">
   <650 440 650 580 "" 0 0 0 "">
-  <650 440 860 440 "" 0 0 0 "">
-  <860 440 950 440 "" 0 0 0 "">
-  <860 440 860 500 "" 0 0 0 "">
-  <860 530 860 600 "" 0 0 0 "">
-  <1690 -580 1730 -580 "" 0 0 0 "">
-  <1570 -580 1630 -580 "" 0 0 0 "">
+  <650 440 940 440 "" 0 0 0 "">
+  <1370 -670 1370 -580 "" 0 0 0 "">
+  <1260 -670 1370 -670 "" 0 0 0 "">
+  <2240 -1670 2240 -1600 "" 0 0 0 "">
+  <2130 -1670 2240 -1670 "" 0 0 0 "">
+  <1260 -670 1260 -560 "" 0 0 0 "">
+  <2130 -1670 2130 -1580 "" 0 0 0 "">
+  <3550 -2810 3550 -2630 "" 0 0 0 "">
+  <2970 -2810 2970 -2600 "" 0 0 0 "">
+  <2970 -2810 3550 -2810 "" 0 0 0 "">
+  <2060 -2520 2140 -2520 "" 0 0 0 "">
+  <2060 -3000 2060 -2520 "" 0 0 0 "">
+  <2130 -2580 2140 -2580 "" 0 0 0 "">
+  <2130 -2580 2130 -1670 "" 0 0 0 "">
+  <2200 -2580 2330 -2580 "" 0 0 0 "">
+  <2330 -2710 2330 -2580 "" 0 0 0 "">
+  <2330 -2710 2750 -2710 "" 0 0 0 "">
+  <2750 -2810 2750 -2710 "" 0 0 0 "">
+  <2750 -2810 2970 -2810 "" 0 0 0 "">
 </Wires>
 <Diagrams>
 </Diagrams>
